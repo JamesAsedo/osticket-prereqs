@@ -34,14 +34,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 	When creating the VM, allow it to create a new Virtual Network (Vnet):
 </p>
 <p>
-	<!<img src="https://i.imgur.com/dEF1c7h.png" height="75%" width="100%" alt="Windows Virutal Machine"/>>
+	<!<img src="https://i.imgur.com/dEF1c7h.png" height="75%" width="100%" alt="Windows Virutal Machine"/>
 </p>
 <br />
 <br />
 <h3 align="center">Connect to your Virtual Machine with Remote Desktop</h3>
 <br />
 <p>
-	<!<img src="https://i.imgur.com/eUGckZH.png" height="75%" width="100%" alt="Remote Desktop"/>>
+	<!<img src="https://i.imgur.com/eUGckZH.png" height="75%" width="100%" alt="Remote Desktop"/>
 </p>
 <br />
 <br />
