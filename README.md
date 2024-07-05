@@ -27,35 +27,40 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h3 align="center">Create Virutal Machine in Azure</h3>
 <p>
 	<h4>Create a Resource Group</h4>
-	<!<img src="https://i.imgur.com/eBi5k2l.png" height="75%" width="100%" alt="Resource Group"/>
-</p>
-<p>
+	<img src="https://i.imgur.com/fH0JTUb.png" height="75%" width="100%" alt="Resource Group"/>
 	<h4>Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs</h4>
 	When creating the VM, allow it to create a new Virtual Network (Vnet):
+	<img src="https://i.imgur.com/vHQGjuQ.png" height="75%" width="100%" alt="Windows Virutal Machine"/>
 </p>
-<p>
-	<!<img src="https://i.imgur.com/dEF1c7h.png" height="75%" width="100%" alt="Windows Virutal Machine"/>
-</p>
-<br />
 <br />
 <h3 align="center">Connect to your Virtual Machine with Remote Desktop</h3>
-<br />
 <p>
-	<!<img src="https://i.imgur.com/eUGckZH.png" height="75%" width="100%" alt="Remote Desktop"/>
+	<h4>Obtain/copy VM's public IP address. Then open Remote Desktop and type-in/paste VM's public IP address.</h4>
+	<img src="https://i.imgur.com/J4WnDUj.png" height="75%" width="100%" alt="VM Public IP address"/>
+	<img src="https://i.imgur.com/1KOYaCs.png" height="75%" width="100%" alt="Remote Desktop"/>
 </p>
 <br />
-<br />
-<h3 align="center">Install / Enable IIS in Windows</h3>
-<br />
+<h3 align="center">Install / Enable IIS in Windows with CGI</h3>
 <p>
-	<!<img src="https://i.imgur.com/iB0DDRd.png" height="75%" width="100%" alt="Enable IIS in Windows"/>>
+	<h4>Navigate to "Control Panel" > "Programs" > "Turn Windows features on or off" inside the VM</h4>
+	<img src="https://i.imgur.com/Wx1YwTr.png" height="75%" width="100%" alt="Control Panel-Programs"/>
+	<h4>In the "Turn Windows features on or off" window, navigate to IIS (turn on) > Worl Wide Web Services > Application Development features > CGI (turn on). Under Worl Wide Web Services branch, navigate to Common HTTP Features and ensure all selections are marked then click "Ok".</h4>
+	<img src="https://i.imgur.com/Nb212NQ.png" height="75%" width="100%" alt="Turn Windows Features on/off"/>
 </p>
-<br />
 <br />
 <h3 align="center">Install Web Platform Installer</h3>
-<br />
 <p>
-	<!<img src="https://i.imgur.com/Fw4m4fZ.png" height="75%" width="100%" alt="Enable IIS in Windows"/>>
+	<h4>Download and Install PHP Manager for IIS</h4>
+	<img src="https://i.imgur.com/ZRTCdhu.png" height="75%" width="100%" alt="PHP Manager"/>
+	<h4>Download and Install IIS URL Rewrite Module 2</h4>
+	<img src="https://i.imgur.com/noTYicL.png" height="75%" width="100%" alt="IIS URL Rewrite"/>
+	<h4>Create "PHP" folder in VM's (C:) drive</h4>
+	<img src="https://i.imgur.com/rW6RKTK.png" height="75%" width="100%" alt="PHP Folder"/>
+        <h4>Download and install PHP Version 7.3.8 (or any other version if necessary, archives). Extract all files to VM's C:\PHP</h4>
+	<img src="https://i.imgur.com/v5oDxYs.png" height="75%" width="100%" alt="PHP Extracted Files"/>
+	<h4>Download and install Microsoft Visual C++</h4>
+	<img src="https://i.imgur.com/0LXcAMW.png" height="75%" width="100%" alt="Microsoft Visual C++"/>
+	<h4>Download and Install MySQL</h4>
 </p>
 <p>
   Open after installation:
