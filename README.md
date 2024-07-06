@@ -21,6 +21,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Create Virtual Machine in Azure
 - Install Web Platform Installer
 - Install osTicket v1.15.8
+- Setup osTicket in browser
 - Install HeidiSQL
 
 <h2>Installation Steps</h2>
@@ -86,107 +87,38 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 	<img src="https://i.imgur.com/dZXUN4u.png" height="50%" width="50%" alt="Rename ost-config"/>
 	<h4>Assign Permissions: ost-config.php > Disable inheritance: Remove All > New Permissions: Everyone -> All</h4>
 	<img src="https://i.imgur.com/kdSMZHa.png" height="50%" width="50%" alt="Disable inheritance"/>
+	<img src="https://i.imgur.com/y0RX0XM.png" height="50%" width="50%" alt="new permissions"/>
+	<img src="https://i.imgur.com/AVfg286.png" height="50%" width="50%" alt="permissions all"/>
 	<!<img src="" height="50%" width="50%" alt=""/>
-	<!<img src="" height="50%" width="50%" alt=""/>
-	<!<img src="" height="50%" width="50%" alt=""/>
-	<!<img src="" height="50%" width="50%" alt=""/>
-	<!<img src="" height="50%" width="50%" alt=""/>
-	<!<img src="" height="50%" width="50%" alt=""/>
+	
+	
 </p>
 <br />
-<br />
+<h3 align="center">Setup osTicket in Browser</h3>
+<img src="https://i.imgur.com/Xof0Ude.png" height="50%" width="50%" alt="osTicket setup"/>
 <p>
-	New Permissions -> Everyone -> All:
-</p>
-<p>
-	<img src="https://i.imgur.com/YzsMXNX.png" height="75%" width="100%" alt="new permissions"/>>
-</p>
-<p>
-	<!<img src="https://i.imgur.com/k7x9yGR.png" height="75%" width="100%" alt="new permissions - all"/>>
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser (click Continue)</h3>
-<br />
-<p>
-	Name Helpdesk.
-</p>
-<p>
-	Default email (receives email from customers):
-</p>
-<p>
-	<!<img src="https://i.imgur.com/rvMvlNC.png" height="75%" width="100%" alt="continue osTicket setup"/>>
-	<!<img src="https://i.imgur.com/YszhIpl.png" height="75%" width="100%" alt="osTicket settings"/>>
+	<h4>Name Helpdesk and default email (receives email from customers)</h4>
+	<img src="https://i.imgur.com/6Vz9pyU.png" height="50%" width="50%" alt="osTicket Helpdesk name and email"/>
+	<h4>Download and Install HeidiSQL > Create new session > input previously created credentials</h4>
+	<img src="https://i.imgur.com/KqEVaZe.png" height="50%" width="50%" alt="download HeidiSQL"/>
+	<img src="https://i.imgur.com/gxofcVa.png" height="50%" width="50%" alt="new HeidiSQL connection"/>
+	<h4>Create an "osTicket" database by right-clicking "Unnamed"-> hover to "Create new"-> click "Database"</h4>
+	<img src="https://i.imgur.com/lRYfXtZ.png" height="50%" width="50%" alt="new osTicket database"/>
+	<h4>Continue setting up osTicket in the browser</h4>
+	<img src="https://i.imgur.com/14owS3w.png" height="50%" width="50%" alt="ocTicket Setup browser MySQL usernam and password"/>	
 </p>
 <br />
-<br />
-<h3 align="center">Download and Install HeidiSQL</h3>
-<br />
+<h3 align="center">Cleanup</h3>
 <p>
-	<!<img src="https://i.imgur.com/AEg0b2P.png" height="75%" width="100%" alt="download HeidiSQL"/>>
+	<h4>Delete: C:\inetpub\wwwroot\osTicket\setup</h4>
+	<img src="https://i.imgur.com/HRTcUbx.png" height="50%" width="50%" alt="clean up"/>
+	<h4>Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php</h4>
+	<img src="https://i.imgur.com/OY6Viym.png" height="50%" width="50%" alt="read only permissions"/>
 </p>
-<p>
-	Create a new session, root/Password1.
-</p>
-<p>
-	Connect to the session:
-</p>
-<p>
-	<!<img src="https://i.imgur.com/9t51ApR.png" height="75%" width="100%" alt="create sessions"/>>
-</p>
-<p>
-	Create a database called “osTicket”:
-</p>
-<p>
-	<!<img src="https://i.imgur.com/vXzmQqg.png" height="75%" width="100%" alt="create database"/>>
-</p>
-<br />
-<br />
-<h3 align="center">Continue Setting up osTicket in the browser</h3>
-<br />
-<p>MySQL Database: osTicket</p>
-<p>
-	MySQL Username: root
-</p>
-<p>
-	MySQL Password: Password1:
-</p>
-<p>
-	<!<img src="https://i.imgur.com/akDyber.png" height="75%" width="100%" alt="setting up osTicket cont'd"/>>
-</p>
-<p>Click “Install Now!”</p>
-<p>Congratulations, hopefully it is installed with no errors!</hp>
-<p>
-	<!<img src="https://i.imgur.com/J5omRoE.png" height="75%" width="100%" alt="installation complete"/>>
-</p>
-<br />
-<br />
-<h3 align="center">Clean up</h3>
-<br />
-<p>
-	Delete: C:\inetpub\wwwroot\osTicket\setup:
-</p>
-<p>
-	<!<img src="https://i.imgur.com/eg0ZPG3.png" height="75%" width="100%" alt="clean up"/>>
-</p>
-<p>
-	Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php:
-</p>
-<p>
-	<!<img src="https://i.imgur.com/n6k46XL.png" height="75%" width="100%" alt="permissions"/>>
-</p>
-<br />
 <br />
 <h3 align="center">Login to the osTicket Admin Panel (http://localhost/osTicket/scp/login.php)</h3>
+<img src="https://i.imgur.com/zklvv8K.png" height="50%" width="50%" alt="admin panel"/>
 <br />
 <p>
-	<!<img src="https://i.imgur.com/zklvv8K.png" height="75%" width="100%" alt="admin panel"/>>
-</p>
-<br />
-<br />
-<p>
-	And there you have it! I hope this tutorial helped you with installing osTicket.
-</p>
-<p>
-	And now you can practice having your own mock help desk locally to prepare you for a postion in a help desk or IT support position.
+	And there you have it! I hope that this tutorial helped you with installing osTicket. Thank you for stopping by and checking out this tutorial. Have a wonderful day!
 </p>
